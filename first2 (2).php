@@ -159,9 +159,11 @@
   <center>
   <table width="100%">
     <tr>
-      <td><button type="button" onclick="location.href='first2.php'" class="btn btn-warning">Edit</button></td>
-      <td><button type="button" onclick="location.href='addstock.php'" class="btn btn-success">Add</button></td>
-      <td><button type="button" onclick="location.href='delstock.php'" class="btn btn-danger">Delete</button></td>
+      <td><button type="button" class="btn btn-warning">Action 1</button></td>
+      <td><button type="button" class="btn btn-success">Action 2</button></td>
+      <td><button type="button" class="btn btn-danger">Action 3</button></td>
+      <td><button type="button" class="btn btn-info">Action 4</button></td>
+      <td><button type="button" class="btn btn-light">Action 5</button></td>
     </tr>
   </table>
 </center>

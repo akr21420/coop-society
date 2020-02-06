@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
   $(function(){
             $('#pcode').keyup(function(){
 
@@ -29,7 +29,7 @@
         });
     });
 });
-</script>
+</script>-->
 </head>
 <body>
 
@@ -54,13 +54,14 @@
   <center>
   <h3><b>Stock Management</b></h3>
   <hr>
-  <form action="sub.php" method="post" autocomplete="off">
-  <table align="center" width="100%" height="90%" id="stocks">
+  <form style="width: auto; height: auto;" action="stockdel.php" method="post" autocomplete="off">
+  <table align="center" width="40%" id="stocks">
     <tr>
       <td><label>Product code</label></td>
       <td>
-        <input type="float" name="pcode" id="pcode" colspan="2" required>
+        <input type="float" name="pcode" id="pcode" required>
       </td>
+      <!--
       <td></td>
       <td></td>
       <td></td>
@@ -88,7 +89,7 @@
       
         <input type="text" name="pdesc" id="pdesc" style="width: 100%;">
         
-        <!--<textarea cols="59" rows="1"></textarea>-->
+        <textarea cols="59" rows="1"></textarea>
       </td>
     </tr>
     <tr>
@@ -142,10 +143,11 @@
         </td>
       </tr>
       <br>
+    -->
       <tr align="center">
         <td align="center" colspan="8">
           <center>
-          <button type="submit" class="btn btn-primary" value="Submit" name="submit" style="float:center;">Submit</button>
+          <button id='delbtn' type="submit" class="btn btn-primary" value="Submit" name="submit" style="float:center;">Submit</button>
         </center>
         </td>
       </tr>
@@ -161,7 +163,7 @@
     <tr>
       <td><button type="button" onclick="location.href='first2.php'" class="btn btn-warning">Edit</button></td>
       <td><button type="button" onclick="location.href='addstock.php'" class="btn btn-success">Add</button></td>
-      <td><button type="button" onclick="location.href='delstock.php'" class="btn btn-danger">Delete</button></td>
+      <td><button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
   </table>
 </center>
